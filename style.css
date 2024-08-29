@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1c1c1c; /* Dark background */
+    overflow: hidden; /* Prevent scrolling */
+    flex-direction: column;
+}
+
+canvas {
+    border: 1px solid #333; /* Subtle border */
+}
+
+#controls {
+    opacity: 0; /* Start hidden */
+    position: absolute;
+    bottom: 20px;
+    background-color: rgba(28, 28, 28, 0.8); /* Slightly transparent dark background */
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    display: flex;
+    align-items: center;
+    transition: opacity 1s ease-in-out; /* Smooth fade-in */
+}
+
+#controls label {
+    margin-right: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+#controls input[type="checkbox"],
+#controls input[type="number"] {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#controls input[type="number"] {
+    width: 50px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
